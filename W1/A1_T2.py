@@ -1,7 +1,0 @@
-name1 = input("Enter the first name: ")
-print(f"Hello, {name1}!")
-name2 = input("Enter the second name: ")
-print(f"Hello, {name2}!")
-print(f"Nice to meet you both, {name1} and {name2}!")
-print(f"{name1} is eating Ice-Cream with {name2}")
-print(f"{name1} and {name2} are friends!")
