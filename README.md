@@ -1,6 +1,6 @@
 # IIT26S_PROGRAMMING
 
-W1 
+W1
 T5 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W1/A1_T5.py 
 T6 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W1/A1_T6.py
 
