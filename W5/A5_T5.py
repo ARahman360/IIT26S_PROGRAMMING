@@ -1,7 +1,9 @@
-def main() -> None:
+def main():
     word = ""
     print("Program starting.")
-    while True:
+
+    choice = ""
+    while choice != "0":
         print("Options:")
         print("1 - Insert word")
         print("2 - Show current word")
@@ -12,17 +14,16 @@ def main() -> None:
         if choice == "1":
             word = input("Insert word: ")
         elif choice == "2":
-            print(f'Current word - "{word}"')
+            print('Current word - "' + word + '"')
         elif choice == "3":
-            print(f'Word reversed - "{word[::-1]}"')
+            print('Word reversed - "' + word[::-1] + '"')
         elif choice == "0":
             print("Exiting program.")
-            break
         else:
             print("Unknown option!")
+
         print()
 
-    print()
     print("Program ending.")
     return None
 
