@@ -1,14 +1,14 @@
-def askName() -> str:
+def askName():
     name = input("Insert name: ")
     return name
 
 
-def greetUser(PName: str) -> None:
-    print(f"Hello {PName}!")
+def greetUser(PName):
+    print("Hello " + PName + "!")
     return None
 
 
-def main() -> None:
+def main():
     print("Program starting.")
     name = askName()
     greetUser(name)
