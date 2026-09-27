@@ -1,12 +1,12 @@
-def frameWord(PWord: str) -> None:
-    frame = "*" * (len(PWord) + 4)
-    print(frame)
+def frameWord(PWord):
+    stars = "*" * (len(PWord) + 4)
+    print(stars)
     print("* " + PWord + " *")
-    print(frame)
+    print(stars)
     return None
 
 
-def main() -> None:
+def main():
     print("Program starting.")
     word = input("Insert word: ")
     print()
