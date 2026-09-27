@@ -16,5 +16,6 @@ W4
 T5 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W4/A4_T5.py                                                                                           
 T6 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W4/A4_T6.py
 
-
-
+W5
+T5 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W5/A5_T5.py
+T6 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W5/A5_T6.py
