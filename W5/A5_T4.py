@@ -1,6 +1,6 @@
 def askDimension(PPrompt: str) -> float:
-    feed = float(input(f"Insert {PPrompt}: "))
-    return feed
+    number = float(input("Insert " + PPrompt + ": "))
+    return number
 
 
 def calcRectangleArea(PWidth: float, PHeight: float) -> float:
@@ -8,13 +8,13 @@ def calcRectangleArea(PWidth: float, PHeight: float) -> float:
     return area
 
 
-def main() -> None:
+def main():
     print("Program starting.")
     width = askDimension("width")
     height = askDimension("height")
     area = calcRectangleArea(width, height)
     print()
-    print(f"Area is {area}²")
+    print("Area is " + str(area) + "²")
     print("Program ending.")
     return None
 
