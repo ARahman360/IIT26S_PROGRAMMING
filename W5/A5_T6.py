@@ -1,4 +1,4 @@
-def showOptions() -> None:
+def showOptions():
     print("Options:")
     print("1 - Show count")
     print("2 - Increase count")
@@ -7,34 +7,37 @@ def showOptions() -> None:
     return None
 
 
-def askChoice() -> int:
-    feed = input("Your choice: ")
-    if feed.isnumeric():
-        return int(feed)
-    return -1
+def askChoice():
+    answer = input("Your choice: ")
+    if answer.isnumeric():
+        choice = int(answer)
+    else:
+        choice = -1
+    return choice
 
 
-def main() -> None:
+def main():
     count = 0
+    choice = -1
     print("Program starting.")
-    while True:
+
+    while choice != 0:
         showOptions()
         choice = askChoice()
 
         if choice == 1:
-            print(f"Current count - {count}")
+            print("Current count -", count)
         elif choice == 2:
-            count += 1
+            count = count + 1
         elif choice == 3:
             count = 0
         elif choice == 0:
             print("Exiting program.")
-            break
         else:
             print("Unknown option!")
+
         print()
 
-    print()
     print("Program ending.")
     return None
 
