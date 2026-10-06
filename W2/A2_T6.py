@@ -1,6 +1,8 @@
 print("Program starting.")
+print()
 
-color = input("Insert a hex color: ")
+print("Insert a hex color: ")
+color = input()
 
 red = color[1:3]
 green = color[3:5]
@@ -10,5 +12,6 @@ print("Colors")
 print("- Red", red)
 print("- Green", green)
 print("- Blue", blue)
+print()
 
 print("Program ending.")
