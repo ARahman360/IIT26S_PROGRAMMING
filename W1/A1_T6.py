@@ -1,6 +1,4 @@
-print("Insert an Integer: ")
-integer = int(input())
-print("value is ", integer)
+integer = int(input("Insert an Integer: "))
+print(f"Value is {integer}")
 remainder = integer % 2
-print("The remainder is ",remainder, "when ",integer, "is divided by 2.")
-
+print(f"The remainder is {remainder} when {integer} is divided by 2.")
