@@ -1,41 +1,38 @@
 from svgwrite import Drawing
-from svgwrite.shapes import Rect, Circle
+import drawLib
 
 
-def drawSquare(PDwg: Drawing) -> None:
+def drawSquare(dwg: Drawing) -> None:
     print("Insert square")
     left = float(input("- Left edge position: "))
     top = float(input("- Top edge position: "))
     side = float(input("- Side length: "))
     fill = input("- Fill color: ")
     stroke = input("- Stroke color: ")
-    square = Rect(insert=(left, top), size=(side, side), fill=fill, stroke=stroke)
-    PDwg.add(square)
-    return None
+    drawLib.drawSquare(dwg, left=left, top=top, sideLength=side,
+                       color=fill, strokeColor=stroke)
 
 
-def drawCircle(PDwg: Drawing) -> None:
+def drawCircle(dwg: Drawing) -> None:
     print("Insert circle")
-    x = float(input("- Center point X: "))
-    y = float(input("- Center point Y: "))
+    x = float(input("- Center X coord: "))
+    y = float(input("- Center Y coord: "))
     radius = float(input("- Radius: "))
     fill = input("- Fill color: ")
     stroke = input("- Stroke color: ")
-    circle = Circle(center=(x, y), r=radius, fill=fill, stroke=stroke)
-    PDwg.add(circle)
-    return None
+    drawLib.drawCircle(dwg, centerX=x, centerY=y, radius=radius,
+                       color=fill, stroke=stroke)
 
 
-def saveSvg(PDwg: Drawing) -> None:
+def saveSvg(dwg: Drawing) -> None:
     filename = input("Insert filename: ")
-    print('Saving file to "{}"'.format(filename))
+    print(f'Saving file to "{filename}"')
     answer = input("Proceed (y/n)?: ")
     if answer.lower() == "y":
-        PDwg.saveas(filename, pretty=True, indent=2)
+        drawLib.saveSvg(dwg, filename)
         print("Vector saved successfully!")
     else:
         print("Save cancelled.")
-    return None
 
 
 def showOptions() -> None:
@@ -44,7 +41,6 @@ def showOptions() -> None:
     print("2 - Draw circle")
     print("3 - Save svg")
     print("0 - Exit")
-    return None
 
 
 def main() -> None:
@@ -65,10 +61,8 @@ def main() -> None:
         else:
             print("Unknown option!")
         print()
-
     print()
     print("Program ending.")
-    return None
 
 
 if __name__ == "__main__":
