@@ -44,3 +44,8 @@ T6 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W8/A8_T6.py
 
 T5 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W9/A9_T5.py  
 T6 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W9/A9_T6.py
+
+## W10
+
+T5 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W10/A10_T5.py  
+T6 - https://github.com/ARahman360/IIT26S_PROGRAMMING/blob/main/W10/A10_T6.py
