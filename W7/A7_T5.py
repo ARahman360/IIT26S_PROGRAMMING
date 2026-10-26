@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 DELIMITER = ";"
-WEEKDAYS = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturnday", "Sunday")
+WEEKDAYS = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
 
 @dataclass
 class TIMESTAMP:
@@ -26,7 +26,7 @@ def readFile(PFilename: str, PTimestamps: list[TIMESTAMP]) -> None:
             if row != "":
                 columns = row.split(DELIMITER)
                 timestamp = TIMESTAMP()
-                timestamp.weekday = columns[0]
+                timestamp.weekday = "Saturday" if columns[0] == "Saturnday" else columns[0]
                 timestamp.hour = columns[1]
                 timestamp.consumption = float(columns[2])
                 timestamp.price = float(columns[3])
